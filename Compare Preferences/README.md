@@ -3,9 +3,6 @@ A visually engaging desktop application on KNIME platform to generate a report c
 Helpful when the entries are jumbled and have lot of entries / differences making text based compare difficult.
 Easy to Read excel comparision results showing what's missing, modified and extra
 
-# Limitations
-Only Preference Name and Values are compared. Not other attributes like Type, Array.
-
 # How to use
 1. Download, install and run the KNIME application (https://www.knime.com/).
 2. Download the KNIME workflow (.knwf file extension) from this repo.
@@ -16,3 +13,6 @@ Only Preference Name and Values are compared. Not other attributes like Type, Ar
 # Help to find Import option
 By default KNIME opens up in the 'Modern UI' and the current version (5.3.1) does not support import/export options.
 Switch to the 'Classic UI' by using the 'Menu' button at the Top-Right Corner of the application.
+
+# Limitations
+Only Preference Name and Values are compared. Not other attributes like Type, Array.
