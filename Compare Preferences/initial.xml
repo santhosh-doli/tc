@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- orginal.xml. These are dummy entries to demo comparision -->
+<preferences version="10.0">
+	<category name="Configuration.Search">
+		<category_description>No description available for this category.</category_description>
+		<preference name="QRYColumnShownPref" type="String" array="true" disabled="false" protectionScope="User" envEnabled="false">
+			<preference_description>Specifies the list of default saved queries used for both Teamcenter Rich/Thin clients</preference_description>
+			<context name="Teamenter">
+			<value>General...</value>
+			<value>Item...</value>
+			<value>Item Revision...</value>
+			<value></value>
+			</context>
+		</preference>
+	</category>
+	<category name="Thin Client">
+		<category_description>No description available for this category.</category_description>
+		<preference name="WEB_default_site_server" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+			<preference_description>Defines the URL of the default site server used for mail notifications and other server oriented tasks.</preference_description>
+			<context name="Teamenter">
+			<value>http://foo.com:8080</value>
+			</context>
+		</preference>
+	</category>
+	<category name="Active Workspace">
+		<category_description></category_description>
+		<preference name="AWC_NX_ApplicationAndEnvironmentIsSupported" type="Logical" array="false" disabled="false" protectionScope="User" envEnabled="false">
+			<preference_description>If NX supports Application and Environment Change. The default value is false</preference_description>
+			<context name="Teamenter">
+			<value>false</value>
+			</context>
+		</preference>
+		<preference name="AWC_use_item_not_configured_rev" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+			<preference_description>Defines the list of business object types for which system should use their Item object and not the configured revision.</preference_description>
+			<context name="Teamenter">
+			<value>Cfg0ProductItem</value>
+			<value>Cfg0Dictionary</value>
+			<value>ManufacturerPart</value>
+			<value>Vendor</value>
+			</context>
+		</preference>
+	</category>
+	<category name="Interface.Rich Client">
+		<category_description>No description available for this category.</category_description>
+		<preference name="AE_dataset_default_keep_limit" type="Integer" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+			<preference_description>Default number of versions of Teamcenter datasets to keep before deleting old versions. Changing the value will only affect datasets created after the value is changed</preference_description>
+			<context name="Teamenter">
+			<value>3</value>
+			</context>
+		</preference>
+		<preference name="HiddenPerspectives" type="String" array="true" disabled="false" protectionScope="User" envEnabled="false">
+			<preference_description>Lists hidden Teamcenter perspectives based on user preference. The value listed must be the activity name defined at org.eclipse.ui.activities extension point within a given perspectives plugin.xml</preference_description>
+			<context name="Teamenter">
+			<value>ChangeManager</value>
+			<value>ReportDesigner</value>
+			<value>AuditManager</value>
+			<value>PlatformDesigner</value>
+			</context>
+		</preference>
+	</category>
+</preferences>
